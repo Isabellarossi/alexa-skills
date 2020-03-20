@@ -77,7 +77,6 @@ def get_data():
         Sendo no Brasil %s casos confirmados e %s casos fatais.' % (total, deaths, recovered, brazil_total, brazil_deaths))
 
 
-
 class LaunchRequestHandler(AbstractRequestHandler):
     def can_handle(self, handler_input):
         return ask_utils.is_request_type("LaunchRequest")(handler_input)
